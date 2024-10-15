@@ -1,0 +1,90 @@
+body {
+  font-family: 'Arial', sans-serif; /* Define a fonte do corpo como Arial, com uma alternativa sans-serif */
+  background-color: #f0f0f5; /* Define a cor de fundo do corpo */
+  color: #333; /* Define a cor do texto como um tom de cinza escuro */
+  text-align: center; /* Centraliza o texto dentro do corpo */
+  padding: 20px; /* Adiciona um espaçamento interno de 20 pixels ao redor do conteúdo do corpo */
+}
+
+h1, h2 {
+  color: #4a4a8a; /* Define a cor dos cabeçalhos h1 e h2 como um tom de azul arroxeado */
+}
+
+input[type="text"], textarea {
+  padding: 10px; /* Adiciona um espaçamento interno de 10 pixels para campos de texto e áreas de texto */
+  width: 250px; /* Define a largura dos campos de entrada */
+  border: 1px solid #ccc; /* Define uma borda cinza clara */
+  border-radius: 5px; /* Arredonda os cantos da borda */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10 pixels */
+}
+
+button {
+  padding: 10px 15px; /* Adiciona um espaçamento interno de 10 pixels vertical e 15 pixels horizontal ao botão */
+  border: none; /* Remove a borda padrão do botão */
+  background-color: #4a4a8a; /* Define a cor de fundo do botão como um tom de azul arroxeado */
+  color: white; /* Define a cor do texto do botão como branco */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+  margin: 5px; /* Adiciona uma margem de 5 pixels ao redor do botão */
+}
+
+button:hover {
+  background-color: #6c6cbf; /* Muda a cor de fundo do botão quando o cursor passa sobre ele */
+}
+
+#photoPreview {
+  max-width: 100%; /* Define a largura máxima da imagem de pré-visualização como 100% do seu elemento pai */
+  height: auto; /* Mantém a proporção da imagem ao ajustar a altura automaticamente */
+  margin: 10px 0; /* Adiciona uma margem superior e inferior de 10 pixels */
+  border: 2px solid #ccc; /* Define uma borda cinza clara ao redor da imagem */
+  border-radius: 10px; /* Arredonda os cantos da borda da imagem */
+}
+
+#folderGallery, #photoGallery {
+  display: flex; /* Define o modo de exibição como flexível para as galerias de pastas e fotos */
+  flex-wrap: wrap; /* Permite que os itens dentro da galeria se movam para a linha seguinte se não houver espaço */
+  justify-content: center; /* Centraliza os itens dentro das galerias */
+  gap: 20px; /* Adiciona um espaço de 20 pixels entre os itens */
+}
+
+.folder, .photo {
+  display: flex; /* Define o modo de exibição como flexível para os itens de pasta e foto */
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  background-color: white; /* Define a cor de fundo como branca */
+  border: 2px solid #ccc; /* Define uma borda cinza clara */
+  border-radius: 10px; /* Arredonda os cantos da borda */
+  padding: 10px; /* Adiciona um espaçamento interno de 10 pixels */
+  max-width: 200px; /* Define a largura máxima dos itens de pasta e foto */
+  transition: transform 0.3s; /* Adiciona uma transição suave ao transformar (escalar) os itens */
+}
+
+.folder:hover, .photo:hover {
+  transform: scale(1.05); /* Aumenta a escala do item em 5% quando o cursor passa sobre ele */
+}
+
+img {
+  max-width: 100%; /* Define a largura máxima da imagem como 100% do seu elemento pai */
+  height: auto; /* Mantém a proporção da imagem ao ajustar a altura automaticamente */
+  border-radius: 10px; /* Arredonda os cantos da imagem */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels */
+}
+
+p {
+  font-size: 14px; /* Define o tamanho da fonte dos parágrafos como 14 pixels */
+  color: #555; /* Define a cor do texto como um cinza médio */
+}
+
+button {
+  background-color: #ff4a4a; /* Define a cor de fundo do botão como um tom de vermelho */
+}
+
+button:hover {
+  background-color: #ff7272; /* Muda a cor de fundo do botão quando o cursor passa sobre ele para um vermelho mais claro */
+}
+
+#backButton {
+  display: none; /* Inicialmente oculta o botão de voltar */
+  margin-top: 20px; /* Adiciona uma margem superior de 20 pixels ao botão */
+}
+

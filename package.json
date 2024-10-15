@@ -1,0 +1,12 @@
+{
+  "name": "my-photo-app",
+  "version": "1.0.0",
+  "description": "App para armazenar fotos e adicionar comentários",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^25.0.0"
+  }
+}

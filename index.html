@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Declara o tipo de documento como HTML5 -->
+
+<html lang="pt-br">
+<!-- Define o idioma do documento como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura a viewport para dispositivos móveis, garantindo que a página seja responsiva -->
+
+  <title>Foto e Comentário App</title>
+  <!-- Define o título da aba do navegador que aparecerá na parte superior -->
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Link para o arquivo de estilo CSS que define a aparência da página -->
+
+  <link rel="icon" href="Imagem/favicon.ico" type="image/x-icon">
+  <!-- Define o ícone que aparecerá na aba do navegador -->
+</head>
+
+<body>
+  <h1>Create and Select Folders</h1>
+  <!-- Cabeçalho principal da página -->
+
+  <!-- Campo de criação de pasta -->
+  <input type="text" id="folderInput" placeholder="New folder name" />
+  <!-- Campo de texto para o usuário inserir o nome da nova pasta -->
+
+  <button id="createFolderButton">Create Folder</button>
+  <!-- Botão que cria uma nova pasta com o nome inserido no campo acima -->
+
+  <!-- Lista de pastas criadas -->
+  <h2>Folders</h2>
+  <div id="folderGallery"></div>
+  <!-- Div onde as pastas criadas serão exibidas -->
+
+  <!-- Seletor de pastas para salvar fotos -->
+  <h2>Select Folder</h2>
+  <select id="folderSelect">
+    <option value="" disabled selected>Select a folder</option>
+    <!-- Opção padrão no seletor, que orienta o usuário a selecionar uma pasta -->
+  </select>
+
+  <!-- Área de seleção e visualização de fotos -->
+  <h2>Photo and Comment</h2>
+  <input type="file" id="photoInput" accept="image/*" />
+  <!-- Campo para o usuário selecionar um arquivo de imagem; o atributo accept limita a seleção a arquivos de imagem -->
+
+  <br>
+  <img id="photoPreview" src="Imagem/icone.png" alt="Photo Preview" />
+  <!-- Imagem de pré-visualização que será atualizada para mostrar a foto selecionada -->
+
+  <br>
+  <textarea id="photoComment" placeholder="Add your comment..."></textarea>
+  <!-- Área de texto onde o usuário pode adicionar um comentário sobre a foto -->
+
+  <br>
+  <button id="saveButton">Save Photo and Comment</button>
+  <!-- Botão para salvar a foto e o comentário na pasta selecionada -->
+
+  <!-- Galeria de fotos -->
+  <h2>Photo Gallery</h2>
+  <div id="photoGallery"></div>
+  <!-- Div onde as fotos da pasta selecionada serão exibidas -->
+
+  <!-- Botão de voltar -->
+  <button id="backButton">Back to Folders</button>
+  <!-- Botão que permite ao usuário voltar para a visualização de pastas -->
+
+  <script src="renderer.js"></script>
+  <!-- Link para o arquivo JavaScript que contém a lógica para interagir com os elementos HTML -->
+</body>
+</html>
+
+
+
